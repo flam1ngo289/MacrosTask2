@@ -1,14 +1,13 @@
-//
-//  main.cpp
-//  MacrosTask2
-//
-//  Created by Кристина Скворцова on 17.02.2024.
-//
-
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#define SUB(x, y) ((x) - (y))
+
+int main (int argc, char** argv)
+{
+    int a = 6;
+    int b = 5;
+    int c = 2;
+    std::cout << SUB(a, b) << std::endl;
+    std::cout << SUB(a, b) * c << std::endl;
+    std::cout << SUB(a, b + c) * c << std::endl;
 }
